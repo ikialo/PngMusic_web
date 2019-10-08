@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #a19b9b;
+  background-color: #1f2220;
+}
+
+ul b {
+  display: block;
+
+}
+
+
+li b {
+  display: block;
+  color: rgb(255, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li b:hover:not(.active) {
+  background-color: rgb(248, 150, 150);
+}
+
+li b.active {
+  color: white;
+  background-color: rgb(255, 196, 0);
+}
+
+
+li a {
+  float: left;
+  display: block;
+  color: rgb(255, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(248, 150, 150);
+}
+
+li a.active {
+  color: white;
+  background-color: rgb(255, 196, 0);
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a  href="index.html">Home</a></li>
+
+  <li><a class="active" href="Artists.html">Artist</a></li>
+
+  <li><a onclick="signout()" >Sign Out</a></li>
+
+</ul>
+
+<button onclick="stopButton()">Stop</button>
+
+<h5 id = 'userName'> Sign In As</h5>
+
+    
+<input  onchange="uploadFile()"
+name = "files[]"
+multiple
+style="margin-top: 7mm" 
+id="files" 
+type="file" >
+</input>
+
+   
+  <ul style="margin-top: 2mm" id="SongList"></ul>
+
+
+
+
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBJ0S7faDDnQoqrtY65JwV_gtD9SJFT-4I",
+            authDomain: "testfirebasess-c763b.firebaseapp.com",
+            databaseURL: "https://testfirebasess-c763b.firebaseio.com",
+            projectId: "testfirebasess-c763b",
+            storageBucket: "testfirebasess-c763b.appspot.com",
+            messagingSenderId: "804040977131",
+            appId: "1:804040977131:web:70fb3548ccba7153a9acae"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="artist_auth.js">
+    </script>
+
+</body>
+</html>

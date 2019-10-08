@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #a19b9b;
+            background-color: #1f2220;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: rgb(255, 0, 0);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: rgb(248, 150, 150);
+        }
+
+        li a.active {
+            color: white;
+            background-color: rgb(255, 196, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="Artists.html">Artist</a></li>
+        <li><a href="sign_in.html">logIn /Sign In</a></li>
+
+    </ul>
+
+
+    <div class="w3-content w3-section" style="max-width:300px">
+        <img class="mySlides" src="logo.jpg" style="width:100%">
+        <img class="mySlides" src="proto.PNG" style="width:100%">
+        <img class="mySlides" src="prototype.PNG" style="width:100%">
+    </div>
+
+
+
+    <p>
+        This is a paragraph that is runnign ther i have gtwp 
+        will be the dame. same is the wron thing to be writing down in this pkace
+        thw
+        asdfasdfsd i dont know why im doing al  thos
+        This is a paragraph that is runnign ther i have gtwp 
+        will be the dame. same is the wron thing to be writing down in this pkace
+        thw
+        asdfasdfsd i dont know why im doing al  thos
+        This is a paragraph that is runnign ther i have gtwp 
+        will be the dame. same is the wron thing to be writing down in this pkace
+        thw
+        asdfasdfsd i dont know why im doing al  thos
+        This is a paragraph that is runnign ther i have gtwp 
+        will be the dame. same is the wron thing to be writing down in this pkace
+        thw
+        asdfasdfsd i dont know why im doing al  thos
+        This is a paragraph that is runnign ther i have gtwp 
+        will be the dame. same is the wron thing to be writing down in this pkace
+        thw
+        asdfasdfsd i dont know why im doing al  thos
+    </p>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 5000); // Change image every 2 seconds
+        }
+    </script>
+
+
+</body>
+
+</html>
